@@ -134,7 +134,7 @@ img.alignleft {
 	}
 
 #wp-calendar caption {
-	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font: 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
 	text-align: center;
 	}
 
@@ -151,9 +151,9 @@ div.aligncenter {
 }
 
 .wp-caption {
-	border: 1px solid #ddd;
+	border: 1px solid #202020;
 	text-align: center;
-	background-color: #f3f3f3;
+	background-color: #444444;
 	padding-top: 4px;
 	margin: 10px;
 	-moz-border-radius: 3px;
