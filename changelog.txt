@@ -1,0 +1,6 @@
+** CHANGELOG **
+
+** 12-13-2010 **
+Version 1.0
+===============
+First official release

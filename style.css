@@ -1,0 +1,446 @@
+/*  
+Theme Name: Grid
+Theme URI: http://www.museumthemes.com/free-themes/grid/
+Description: a stylish, grid-based theme that laughs in the face of grid-based themes.
+Version: 1.0
+Author: Arcane Palette Creative Design
+Author URI: http://www.arcanepalette.com
+License: gpl3
+
+*/
+
+/* 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+
+    http://www.opensource.org/licenses/gpl-3.0.html
+*/
+
+/* Main */
+body {
+	background: url(images/grid.png) top 1px repeat #000000;
+	font-family: 'Museo300', Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-size: 0.8em;
+}
+.container {
+	width: 100%;
+}
+b, strong { font-family: 'Museo700', Arial, Helvetica, sans-serif; }
+i, em { font-family: 'MuseoSans500Italic', Arial, Helvetica, sans-serif; }
+
+a { font-family: 'Museo500', Arial, Helvetica, sans-serif; }
+a:link, a:visited { color: #999999; text-decoration: none; }
+a:hover { color: #cccccc; text-decoration:none; }
+a:active { color: #eeeeee; }
+
+.spacer-10 {
+	clear:both;
+	height: 10px;
+}
+
+.threecolumn {
+	width: 32%;
+	float: left;
+	margin-right: 10px;
+}
+
+/* this stuff is borrowed from Kubrik, the WordPress default theme and handles 
+   WP-specific stuff. */
+   
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left;
+	}
+/* Calendar */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 155px;
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	text-align: center;
+	width: 100%;
+	padding: 3px 0 4px 0!important;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+#wp-calendar #prev a, #wp-calendar #next a {
+	font-size: 9pt;
+	}
+
+#wp-calendar a {
+	text-decoration: none;
+	}
+
+#wp-calendar caption {
+	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	text-align: center;
+	}
+
+#wp-calendar th {
+	font-style: normal;
+	text-transform: capitalize;
+	}	
+/* Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+
+/* Header */
+.header h1 {
+	height:	2.1em;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+.header h1 a:link, .header h1 a:visited {
+	font-family: 'MuseoSans500', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 3em;
+	letter-spacing: -0.2em;
+	line-height: 1em;
+	position: absolute;
+	left: -5px;
+}
+.header h1 a:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+.header h1 a:active {
+	background-color: #000000;
+	color: #ffffff;
+}
+.header h2 { font-family: 'Museo700', Arial, Helvetica, sans-serif; height: 1em; overflow: hidden; position: relative; text-align: right; }
+.header .desc { background-color: #ffffff; font-size: 1.3em; text-transform: lowercase; color: #000000; line-height: 1em; text-decoration: line-through; }
+
+.navbar {	margin: 0 0 0 -3px !important; text-transform: uppercase; font-size: 1.1em; }
+.navbar ul {
+	list-style-type: none;
+	margin: 0 !important;
+}
+.navbar li {
+	background: #000000;
+	float: left;
+	margin-left: 3px;
+	border: 1px solid #101010;
+	padding: 1px 7px;
+	position: relative;
+}
+.navbar li a:link, .navbar a:visited { font-family: 'MuseoSans500', Arial, Helvatica, sans-serif!important; }
+.navbar li a:hover, .navbar a:active {position:relative; z-index:999; text-decoration:line-through; }
+.navbar li .first {margin-left: 0px !important;}
+.navbar li:hover, .navbar .current-menu-item { border: 1px dotted #202020; text-transform: lowercase;  }
+.navbar .menu-item-home { text-transform: uppercase; }
+.current-menu-item a:link, .current-menu-item a:visited { color: #cccccc; }
+.current-menu-item a:hover { color: #ffffff; }
+.navbar li li {
+	display: inline;
+	margin: 0;
+	clear: left;
+	position: relative;
+	z-index: 999;
+	padding: 0;
+	border: none!important;
+	text-transform: none!important;
+}
+.navbar li li:hover { text-transform: none!important; }
+.navbar li ul {
+	position: absolute;
+	left: -999em;
+	width: 12em;
+}
+.navbar li:hover ul {
+	left: -1px;
+	background: #000000;
+	border-left: 1px dotted #202020;
+	border-right: 1px dotted #202020;
+	border-bottom: 1px dotted #202020;		
+	padding: 5px;
+	z-index: 10;
+}
+.navbar li:hover ul, #nav li.sfhover ul {
+	left: -1px;
+}	
+
+/* Content */
+
+.content {
+	margin-top: 20px;
+	width: 70%;
+	float: left;
+}
+
+.post {
+	background: #000000;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+.the_date h3 { font-family: 'Museo700', Arial, Helvetica, sans-serif; margin-bottom: 0 !important; margin-top: 10px; background: #444444; color: #000000; text-transform: uppercase; letter-spacing: -0.1em; font-size: 1.2em; }
+.postmetadata {padding: 0 0 5px 0;}
+.navigation {
+	margin: 10px auto;
+}
+span.diggs, span.deliciouss, span.twitters, span.facebooks, span.stumble, span.rss {background: transparent url(images/share.png) no-repeat; padding: 0 5px 0 18px; height: 16px; overflow:hidden; font-size: 0.9em;}
+.linktous img{margin-bottom: -3px;}
+.linktous a, a.linktous {text-decoration: none !important;}
+.diggs {background-position: 0 0;}
+.diggs:hover {background-position:0 -16px;}
+.deliciouss {background-position: 0 -32px!important;}
+.deliciouss:hover {background-position: 0 -48px!important;}
+.facebooks {background-position: 0 -64px!important;}
+.facebooks:hover {background-position: 0 -80px!important;}
+.twitters {background-position: 0 -96px!important;}
+.twitters:hover {background-position: 0 -112px!important;}
+.stumble {background-position: 0 -128px!important;}
+.stumble:hover {background-position: 0 -144px!important;}
+.rss {background-position: 0 -160px!important;}
+.rss:hover {background-position: 0 -176px!important;}
+
+/* titles */
+.the_title {
+	position: relative;
+	height: 2.4em;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+.the_title0, a:link .the_title0, a:visited .the_title0, a:active .the_title0 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-family: 'MuseoSans500', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #111111;
+	font-size: 2.5em;
+	z-index: 0;
+}
+a:hover .the_title0 {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.the_title1, a .the_title1 {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	font-family: 'MuseoSans500', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #333333;
+	font-size: 2.4em;
+	z-index: 1;
+}
+
+.the_title2, a .the_title2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-family: 'Museo700', Arial, Helvetica, sans-serif;
+	text-transform: lowercase;
+	text-decoration:  line-through;
+	color: #eeeeee;
+	font-size: 2.4em;
+	z-index: 2;
+}
+
+.the_title3, a:link .the_title3, a:visited .the_title3, a:active .the_title3 {
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	font-family: 'Museo700', Arial, Helvetica, sans-serif;
+	text-transform: lowercase;
+	color: #222222;
+	font-style:italic;
+	font-size: 2.6em;
+	z-index: 3;
+}
+a:hover .the_title3 { color: #ffffff; }
+
+.the_title4, a:link .the_title4, a:visited .the_title4, a:active .the_title4 {
+	font-family: 'Museo500', Arial, Helvetica, sans-serif;
+	position: absolute;
+	color: #e0e0e0;
+	left: 0;
+	top: 0px;
+	font-size: 2.5em;
+	text-decoration: line-through;
+	z-index: 4;
+}
+a:hover .the_title4 { color: #000000; }
+
+.the_title5, a:link .the_title5, a:visited .the_title5, a:active .the_title5 {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	color: #000000;
+	font-size: 2.5em;
+	text-transform: lowercase;
+	z-index: 5;
+}
+a:hover .the_title5 { color: #ffffff; }
+
+.the_title6, a:link .the_title6, a:visited .the_title6, a:active .the_title6 {
+	color: #ffffff;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	letter-spacing: -0.1em;
+	font-size: 2.5em;
+	z-index: 6;
+	font-family: 'MuseoSans500', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+a:hover .the_title6 { color: #000000; }
+
+.heading {
+	height:	2.1em;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+h2.the_heading {
+	font-family: 'Museo700', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 3em;
+	letter-spacing: -0.15em;
+	line-height: 1em;
+	position: absolute;
+	left: -5px;
+}
+
+/* Comments */
+
+#comments ul, #comments ol { list-style-type: none; }
+.odd .avatar { float: left; margin-right: 10px; }
+.even .avatar { float: right; margin-left: 10px; }
+li.comment { clear: both; }
+textarea#comment { width: 646px; }
+
+/* Sidebar */
+
+.sidebar {
+	background-color: #000000;
+	width: 25%;
+	position:relative;
+	height:100%;
+	padding: 0 10px 10px 10px;
+	margin-top: 20px;
+	height: 100%;
+}
+
+ul.sidebar, .sidebar ul  {
+	list-style-type: none;
+	margin: 0px !important;
+}
+.the_left, .the_right {
+	padding-bottom: 20px;
+	display: block;
+}
+.the_left { float: left; margin-left: 20px; margin-right: 10px; }
+.the_right { float: right; margin-left: 10px; margin-right: 20px; }
+
+/* Footer */
+
+.footer {
+	width: 100%;
+	background: #000000;
+	text-align: left;
+	padding: 10px 0;
+}
+.footerwrap { width: 95%; margin: auto; }
+.footer ul { list-style-type: none; margin: 0; }
+.footer .heading { height: 1.4em!important; }
+.footer h2 { font-size: 2.0em; margin: 0; left: -6px; }
+.rightbox { width: 280px!important; }
+.credit { text-align: center; }
+.colborder { border-right: none!important; }
