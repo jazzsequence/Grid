@@ -10,6 +10,7 @@
 	
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
+<?php if (in_category('asides')) { the_content(); } else { ?>
 				<div class="post" id="post-<?php the_ID(); ?>">				
                 <div class="the_title">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
@@ -36,7 +37,7 @@
                 </div>
 				</div>
                 <div class="clear"></div>
-
+	<?php } ?>
 		<?php endwhile; ?>
 
 		<div class="navigation">
