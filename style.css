@@ -1,8 +1,8 @@
 /*  
-Theme Name: Grid
-Theme URI: http://www.museumthemes.com/free-themes/grid/
-Description: a stylish, grid-based theme that laughs in the face of grid-based themes.
-Version: 1.0
+Theme Name: grid
+Theme URI: http://www.arcanepalette.com
+Description: a stylish, grid-based theme that mocks grid-based themes.
+Version: alpha
 Author: Arcane Palette Creative Design
 Author URI: http://www.arcanepalette.com
 License: gpl3
@@ -52,6 +52,11 @@ a:active { color: #eeeeee; }
 	float: left;
 	margin-right: 10px;
 }
+
+h1 { color: #ffffff; }
+h2, h3 { color: #999999; }
+h4, h5 { color: #444444; }
+h6 { background: #444444; color: #000000; }
 
 /* this stuff is borrowed from Kubrik, the WordPress default theme and handles 
    WP-specific stuff. */
