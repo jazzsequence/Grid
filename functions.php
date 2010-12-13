@@ -105,13 +105,13 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 // Here we set the theme's options
 
-$themename = "AP-blueprint";
+$themename = "Grid";
 $shortname = "grid";
 
 // Here come the options!
 
 $options = array (
-	array ( "name" => "<h2>Theme Options</h2>",
+	array ( "name" => "<h2>Grid Options</h2>",
 		"type" => "title"),
 
 // This theme uses various social networking links.  If they exist, an icon will appear in the sidebar that links to your profile
