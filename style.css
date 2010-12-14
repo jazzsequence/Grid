@@ -1,8 +1,8 @@
 /*  
-Theme Name: grid
+Theme Name: Grid
 Theme URI: http://www.arcanepalette.com
 Description: a stylish, grid-based theme that mocks grid-based themes.
-Version: alpha
+Version: 1.0
 Author: Arcane Palette Creative Design
 Author URI: http://www.arcanepalette.com
 License: gpl3
@@ -273,21 +273,20 @@ div.aligncenter {
 .navigation {
 	margin: 10px auto;
 }
-span.diggs, span.deliciouss, span.twitters, span.facebooks, span.stumble, span.rss {background: transparent url(images/share.png) no-repeat; padding: 0 5px 0 18px; height: 16px; overflow:hidden; font-size: 0.9em;}
-.linktous img{margin-bottom: -3px;}
+span.diggs, span.deliciouss, span.twitters, span.facebooks, span.stumble, span.rss {background: transparent url(images/share.png) no-repeat; padding: 0 5px 0 18px; height: 18px; overflow:hidden; font-size: 0.9em;}
 .linktous a, a.linktous {text-decoration: none !important;}
 .diggs {background-position: 0 0;}
 .diggs:hover {background-position:0 -16px;}
-.deliciouss {background-position: 0 -32px!important;}
-.deliciouss:hover {background-position: 0 -48px!important;}
-.facebooks {background-position: 0 -64px!important;}
-.facebooks:hover {background-position: 0 -80px!important;}
-.twitters {background-position: 0 -96px!important;}
-.twitters:hover {background-position: 0 -112px!important;}
+.deliciouss {background-position: 0 -33px!important;}
+.deliciouss:hover {background-position: 0 -49px!important;}
+.facebooks {background-position: 0 -65px!important;}
+.facebooks:hover {background-position: 0 -81px!important;}
+.twitters {background-position: 0 -97px!important;}
+.twitters:hover {background-position: 0 -113px!important;}
 .stumble {background-position: 0 -128px!important;}
 .stumble:hover {background-position: 0 -144px!important;}
-.rss {background-position: 0 -160px!important;}
-.rss:hover {background-position: 0 -176px!important;}
+.rss {background-position: 0 -161px!important;}
+.rss:hover {background-position: 0 -177px!important;}
 
 /* titles */
 .the_title {
