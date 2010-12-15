@@ -4,6 +4,7 @@
 Version 1.0.1
 ================
 added tags to style.css
+updated theme url
 
 ** 12-13-2010 **
 Version 1.0
