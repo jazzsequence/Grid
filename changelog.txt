@@ -1,5 +1,10 @@
 ** CHANGELOG **
 
+** 12-15-2010 ** 
+Version 1.0.1
+================
+added tags to style.css
+
 ** 12-13-2010 **
 Version 1.0
 ===============
