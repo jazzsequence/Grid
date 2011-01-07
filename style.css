@@ -2,10 +2,11 @@
 Theme Name: Grid
 Theme URI: http://museumthemes.com/free-themes/grid/
 Description: a stylish, grid-based theme that mocks grid-based themes.
-Version: 1.0.1
+Version: 1.0.2
 Author: Arcane Palette Creative Design
 Author URI: http://www.arcanepalette.com
 License: gpl3
+License URI: http://www.opensource.org/licenses/gpl-3.0.html
 Tags: two-columns, black, custom-menu, theme-options, threaded-comments, sticky-post, flexible-width
 
 */
@@ -305,6 +306,8 @@ div.aligncenter {
 	padding: 0 10px;
 	margin-bottom: 10px;
 }
+
+.sticky { border: 1px dotted #202020; }
 
 .the_date h3 { font-family: 'Museo700', Arial, Helvetica, sans-serif; margin-bottom: 0 !important; margin-top: 10px; background: #444444; color: #000000; text-transform: uppercase; letter-spacing: -0.1em; font-size: 1.2em; }
 .postmetadata {padding: 0 0 5px 0;}

@@ -8,7 +8,7 @@
 <div class="content">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
- 				<div class="post" id="post-<?php the_ID(); ?>">				
+ 				<div <?php post_class('post');?> id="post-<?php the_ID(); ?>">				
 
                 <div class="the_title">
                 <h2 class="the_title0"><?php the_title(); ?></h2>
@@ -21,6 +21,7 @@
                 <div class="clear"></div>
 				<div class="entry">
 					<?php the_content('Read more &raquo;'); ?>
+                <div class="navigation"><?php wp_link_pages(); ?></div>                    
 				</div>
     <div class="singlemeta">
     <p><?php edit_post_link('Edit this entry','','.'); ?></p></div>

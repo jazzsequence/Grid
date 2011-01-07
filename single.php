@@ -19,7 +19,7 @@
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         
-				<div class="post" id="post-<?php the_ID(); ?>">				
+				<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">				
 
                 <div class="the_title">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
@@ -38,6 +38,7 @@
 				<div class="entry">
 					<?php the_content('Read more &raquo;'); ?>
 				</div>
+                <div class="navigation"><?php wp_link_pages(); ?></div>
                 Posted in <?php the_category(',&nbsp;'); ?> on <?php the_time('j F Y') ?><?php the_tags(', and tagged ',', ',''); ?><br />
                 <div class="clear"></div>
 				<p class="postmetadata">

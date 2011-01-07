@@ -1,5 +1,16 @@
 ** CHANGELOG **
 
+** 01-07-2011 **
+Version 1.0.2
+================
+added wp_link_pages functionality
+added post_class
+added language_attributes
+added automatic-feed-links
+added license URI
+changed bloginfo('url') to home_url()
+changed bloginfo('template_directory') and bloginfo('template_url') to get_template_directory_uri()
+
 ** 12-15-2010 ** 
 Version 1.0.1
 ================
