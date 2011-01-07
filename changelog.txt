@@ -5,6 +5,8 @@ Version 1.0.1
 ================
 added tags to style.css
 updated theme url
+added gallery styles
+replaced get_settings with get_option
 
 ** 12-13-2010 **
 Version 1.0
