@@ -300,7 +300,7 @@ case 'text':
 	</span>
 	<?php if ($value['image'] != "") {?>
 		<div style="width:808px; padding:10px 0px; overflow:hidden;">
-			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php get_template_directory_uri();?>/images/<?php echo $value['image'];?>" alt="image" />
+			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php bloginfo('template_url');?>/images/<?php echo $value['image'];?>" alt="image" />
 		</div>
 	<?php } ?>
 	<input style="width:200px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo stripslashes(get_option( $value['id'] )); } else { echo stripslashes($value['std']); } ?>" />
@@ -322,7 +322,7 @@ case 'textarea':
 	</span>
 	<?php if ($value['image'] != "") {?>
 		<div style="width:808px; padding:10px 0px; overflow:hidden;">
-			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php get_template_directory_uri();?>/images/<?php echo $value['image'];?>" alt="image" />
+			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php bloginfo('template_url');?>/images/<?php echo $value['image'];?>" alt="image" />
 		</div>
 	<?php } ?>
 	<textarea name="<?php echo $value['id']; ?>" style="width:400px; height:200px;" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( get_option( $value['id'] ) != "") { echo stripslashes(get_option( $value['id'] )); } else { echo stripslashes($value['std']); } ?></textarea>
@@ -344,7 +344,7 @@ case 'select':
 	</span>
 	<?php if ($value['image'] != "") {?>
 		<div style="width:808px; padding:10px 0px; overflow:hidden;">
-			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php get_template_directory_uri();?>/images/<?php echo $value['image'];?>" alt="image" />
+			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php bloginfo('template_url');?>/images/<?php echo $value['image'];?>" alt="image" />
 		</div>
 	<?php } ?>
 	<select style="width:240px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>"><?php foreach ($value['options'] as $option) { ?><option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?>><?php echo $option; ?></option><?php } ?></select>
@@ -366,7 +366,7 @@ case "checkbox":
 	</span>
 	<?php if ($value['image'] != "") {?>
 		<div style="width:808px; padding:10px 0px; overflow:hidden;">
-			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php get_template_directory_uri();?>/images/<?php echo $value['image'];?>" alt="image" />
+			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php bloginfo('template_url');?>/images/<?php echo $value['image'];?>" alt="image" />
 		</div>
 	<?php } ?>
 	<?php if(get_option($value['id'])){ $checked = "checked=\"checked\""; }else{ $checked = "";} ?>
@@ -389,7 +389,7 @@ case "background":
 	</span>
 	<?php if ($value['image'] != "") {?>
 		<div style="width:808px; padding:10px 0px; overflow:hidden;">
-			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php get_template_directory_uri();?>/images/<?php echo $value['image'];?>" alt="image" />
+			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php bloginfo('template_url');?>/images/<?php echo $value['image'];?>" alt="image" />
 		</div>
 	<?php } ?>
 	<?php if(get_option($value['id'])){ $checked = "checked=\"checked\""; }else{ $checked = "";} ?>
@@ -412,7 +412,7 @@ case "palette":
 	</span>
 	<?php if ($value['image'] != "") {?>
 		<div style="width:808px; padding:10px 0px; overflow:hidden;">
-			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php get_template_directory_uri();?>/images/<?php echo $value['image'];?>" alt="image" />
+			<img style="padding:5px; background:#FFF; border:1px solid #ddd;" src="<?php bloginfo('template_url');?>/images/<?php echo $value['image'];?>" alt="image" />
 		</div>
 	<?php } ?>
 	<?php if(get_option($value['id'])){ $checked = "checked=\"checked\""; }else{ $checked = "";} ?>

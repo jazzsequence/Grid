@@ -9,16 +9,16 @@
 	elseif (is_single() ) { single_post_title(); echo ' | '; echo $category[0]->cat_name; }
 	elseif (is_page() ) { single_post_title();}
 	else { wp_title('',true); } ?> | <?php bloginfo('description'); ?></title>
-	<link rel="Shortcut Icon" href="<?php get_template_directory_uri(); ?>/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/blueprint/screen.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/blueprint/print.css" type="text/css" media="print" /> 
+	<link rel="Shortcut Icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/blueprint/screen.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/blueprint/print.css" type="text/css" media="print" /> 
     <!--[if lt IE 8]>
-      <link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/blueprint/ie.css" type="text/css" media="screen, projection" />
+      <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/blueprint/ie.css" type="text/css" media="screen, projection" />
     <![endif]-->	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/fonts/museo.css" type="text/css" media="screen, projection" />    
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/fonts/museo.css" type="text/css" media="screen, projection" />    
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  	<script language="javascript" src="<?php get_template_directory_uri(); ?>/js/suckerfish.js" type="application/javascript"></script>
+  	<script language="javascript" src="<?php bloginfo('template_url'); ?>/js/suckerfish.js" type="application/javascript"></script>
   	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<!-- this activates Twitter @anywhere hovercards -->
 	  <script src="http://platform.twitter.com/anywhere.js?id=3O4tZx3uFiEPp5fk2QGq1A&v=1">
