@@ -4,6 +4,8 @@
 Version 1.0.3
 ================
 added function call for grid_setup() (was missing)
+changed get_template_directory_uri() back to bloginfo('template_url') -- new hook was breaking pretty much everything
+updated screenshot.png to show a representative preview of the theme for WordPress themes repository 
 
 ** 01-07-2011 **
 Version 1.0.2
