@@ -1,5 +1,10 @@
 ** CHANGELOG **
 
+** 01-10-2011 **
+Version 1.0.3
+================
+added function call for grid_setup() (was missing)
+
 ** 01-07-2011 **
 Version 1.0.2
 ================

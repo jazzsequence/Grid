@@ -55,6 +55,8 @@ add_action( 'after_setup_theme', 'grid_setup' );
 
 if ( ! function_exists( 'grid_setup' ) ):
 
+function grid_setup() {
+
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 	
@@ -67,6 +69,7 @@ if ( ! function_exists( 'grid_setup' ) ):
 		'primary' => __( 'Primary Navigation', 'grid' ),
 	) );	
 
+} 
 endif;
 
 // This adds a home link option in the Menus
