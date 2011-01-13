@@ -15,8 +15,8 @@
     <!--[if lt IE 8]>
       <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/blueprint/ie.css" type="text/css" media="screen, projection" />
     <![endif]-->	
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/fonts/museo.css" type="text/css" media="screen, projection" />    
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen, projection" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   	<script language="javascript" src="<?php bloginfo('template_url'); ?>/js/suckerfish.js" type="application/javascript"></script>
   	<?php wp_get_archives('type=monthly&format=link'); ?>

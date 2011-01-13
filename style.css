@@ -2,7 +2,7 @@
 Theme Name: Grid
 Theme URI: http://museumthemes.com/free-themes/grid/
 Description: a stylish, grid-based theme that mocks grid-based themes.
-Version: 1.0.3
+Version: 1.0.4
 Author: Arcane Palette Creative Design
 Author URI: http://www.arcanepalette.com
 License: gpl3
@@ -28,7 +28,7 @@ Tags: two-columns, black, custom-menu, theme-options, threaded-comments, sticky-
 
 /* Main */
 body {
-	background: url(images/grid.png) top 1px repeat #000000;
+	background: #000000 url('images/grid.png') repeat top left;
 	font-family: 'Museo300', Arial, Helvetica, sans-serif;
 	color: #666666;
 	font-size: 0.8em;

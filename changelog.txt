@@ -1,5 +1,10 @@
 ** CHANGELOG **
 
+** 01-13-2011 **
+Version 1.0.4
+================
+fixed issue with background image not appearing in firefox and ie
+
 ** 01-10-2011 **
 Version 1.0.3
 ================
