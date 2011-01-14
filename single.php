@@ -37,6 +37,7 @@
                 
 				<div class="entry">
 					<?php the_content('Read more &raquo;'); ?>
+	                <div class="navigation"><?php wp_link_pages(); ?></div>                    
 				</div>
                 <div class="navigation"><?php wp_link_pages(); ?></div>
                 Posted in <?php the_category(',&nbsp;'); ?> on <?php the_time('j F Y') ?><?php the_tags(', and tagged ',', ',''); ?><br />

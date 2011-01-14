@@ -1,5 +1,10 @@
 ** CHANGELOG **
 
+** 01-14-2011 **
+Version 1.0.5
+================
+added wp_link_pages to single.php
+
 ** 01-13-2011 **
 Version 1.0.4
 ================
