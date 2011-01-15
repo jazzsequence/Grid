@@ -12,6 +12,7 @@ deleted duplicate wp_link_pages in single.php
 enqueued the dependancy script for the twitter stream with wp_enqueue_script but leaving the script that calls the actual stream because it contains dynamic elements set on the options page (footer.php, line 44)
 added <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?> to header
 changed old "do_action('comment_form')" to comment_form()
+updated readme.txt
 
 ** 01-14-2011 **
 Version 1.0.5

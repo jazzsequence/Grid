@@ -12,6 +12,8 @@ a stylish, grid-based theme that mocks grid-based themes.
 
 Grid is a theme I started working on for my own site and decided to make it available as a free theme.  I wanted a dark theme this time around, and I wanted to play with the idea of having a grid background like Justin Tadlock's site and the optional grid.png background image you get when you're working in the blueprintCSS framework.  I also wanted to play around with layering text on top of itself in a way that partially obscures the content.  As such, this theme isn't for everyone, but I'm pretty ecstatic about it.  Grid uses a variable-width layout, so it's always taking up the full screen no matter what resolution you are using.  It has support for Asides, 4 widget areas in the footer and one in the sidebar, optional left/right sidebar and full posts/post excerpts on the blog page, and built-in Twitter hovercards.
 
+Theme options page includes ability to choose full posts or post excerpts on the home page (post thumbnails enabled if excerpts are chosen), sidebar on the right or the left side, and a variety of Twitter features and other social networking links.  An optional RSS feed link can also display your FeedBurner feed rather than the default WordPress feed url.
+
 == Installation ==
 
 1. Unpack and upload the contents of `grid.zip` to the `/wp-content/themes/` directory.
