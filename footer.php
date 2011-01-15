@@ -34,7 +34,7 @@
           </ul>      
         </div>
         <div class="spacer-10"></div>
-		<div class="credit">&copy; <?php echo date('Y'); ?> <?php bloginfo('title'); ?> | <a href="http://museumthemes.com/blog/free-themes/grid/" title="Grid | A free WordPress theme by Arcane Palete" target="_blank">Grid</a> is a <a href="http://museumthemes.com/category/free-themes/" target="_blank" title="Museum Themes | Fine Art WordPress Themes">free WordPress theme</a> by <a href="http://www.arcanepalette.com/" title="arcane palette creative design | artistic website design" target="_blank">Arcane Palette</a></div>
+		<div class="credit">&copy; <?php echo date('Y'); ?> <?php bloginfo('title'); ?> | Grid is a free <a href="http://www.wordpress.org" target="_blank">WordPress</a> theme by <a href="http://www.arcanepalette.com/" title="arcane palette creative design | artistic website design" target="_blank">Arcane Palette</a></div>
         </div>
 </div>
 </div>
