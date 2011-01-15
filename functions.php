@@ -93,7 +93,16 @@ if (function_exists('ls_get_delim')) { /* oh,  you already have landing sites in
 include (TEMPLATEPATH.'/plugins/landingsites.php');
 	}
 	
-
+// enqueue twitter hovercards scripts
+if ( !is_admin() ) { // instruction to only load if it is not the admin area
+   wp_register_script('hovercards_init','http://platform.twitter.com/anywhere.js?id=3O4tZx3uFiEPp5fk2QGq1A&v=1'); // this loads the dependencies from twitter
+   wp_enqueue_script('hovercards_init');
+   wp_register_script('hovercards_go', get_bloginfo('template_directory') . '/js/hovercards.js'); // this calls the actual hovercards script
+   wp_enqueue_script('hovercards_go');
+// enqueue suckerfish.js
+   wp_register_script('suckerfish', get_bloginfo('template_directory') . '/js/suckerfish.js'); // this calls suckerfish.js for dropdowns
+   wp_enqueue_script('suckerfish');
+}
 
 
 // this changes the output of the comments

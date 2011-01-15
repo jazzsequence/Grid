@@ -18,16 +18,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/fonts/museo.css" type="text/css" media="screen, projection" />    
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen, projection" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  	<script language="javascript" src="<?php bloginfo('template_url'); ?>/js/suckerfish.js" type="application/javascript"></script>
   	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<!-- this activates Twitter @anywhere hovercards -->
-	  <script src="http://platform.twitter.com/anywhere.js?id=3O4tZx3uFiEPp5fk2QGq1A&v=1">
-      </script>
-      <script type="text/javascript">
-         twttr.anywhere(function(twitter) {
-                  twitter.hovercards();
-         });
-      </script>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

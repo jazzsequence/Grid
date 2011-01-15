@@ -6,6 +6,7 @@ Version 1.0.6
 removed readme file (added by git anyway) and LICENSE.txt (not required since license URI links to full license
 added a new readme.txt
 changed footer credit link
+using wp_enqueue_script for twitter hovercards and suckerfish
 
 ** 01-14-2011 **
 Version 1.0.5
