@@ -7,6 +7,11 @@ removed readme file (added by git anyway) and LICENSE.txt (not required since li
 added a new readme.txt
 changed footer credit link
 using wp_enqueue_script for twitter hovercards and suckerfish
+changed old "do_action('wp_footer')" to wp_footer()
+deleted duplicate wp_link_pages in single.php
+enqueued the dependancy script for the twitter stream with wp_enqueue_script but leaving the script that calls the actual stream because it contains dynamic elements set on the options page (footer.php, line 44)
+added <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?> to header
+changed old "do_action('comment_form')" to comment_form()
 
 ** 01-14-2011 **
 Version 1.0.5

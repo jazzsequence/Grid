@@ -93,18 +93,6 @@ if (function_exists('ls_get_delim')) { /* oh,  you already have landing sites in
 include (TEMPLATEPATH.'/plugins/landingsites.php');
 	}
 	
-// enqueue twitter hovercards scripts
-if ( !is_admin() ) { // instruction to only load if it is not the admin area
-   wp_register_script('hovercards_init','http://platform.twitter.com/anywhere.js?id=3O4tZx3uFiEPp5fk2QGq1A&v=1'); // this loads the dependencies from twitter
-   wp_enqueue_script('hovercards_init');
-   wp_register_script('hovercards_go', get_bloginfo('template_directory') . '/js/hovercards.js'); // this calls the actual hovercards script
-   wp_enqueue_script('hovercards_go');
-// enqueue suckerfish.js
-   wp_register_script('suckerfish', get_bloginfo('template_directory') . '/js/suckerfish.js'); // this calls suckerfish.js for dropdowns
-   wp_enqueue_script('suckerfish');
-}
-
-
 // this changes the output of the comments
 function gridro_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
@@ -461,4 +449,21 @@ add_action('admin_menu', 'mytheme_add_admin');
 
 /*End of Theme Options =======================================*/
 
+// enqueue a bunch of scripts
+if ( !is_admin() ) { // instruction to only load if it is not the admin area
+// enqueue twitter hovercards
+   wp_register_script('hovercards_init','http://platform.twitter.com/anywhere.js?id=3O4tZx3uFiEPp5fk2QGq1A&v=1'); // this loads the dependencies from twitter
+   wp_enqueue_script('hovercards_init');
+   wp_register_script('hovercards_go', get_bloginfo('template_directory') . '/js/hovercards.js'); // this calls the actual hovercards script
+   wp_enqueue_script('hovercards_go');
+// enqueue suckerfish.js
+   wp_register_script('suckerfish', get_bloginfo('template_directory') . '/js/suckerfish.js'); // this calls suckerfish.js for dropdowns
+   wp_enqueue_script('suckerfish');
+// enqueue twitter stream
+/*   wp_register_script('twitterstream_init', 'http://twitter.com/javascripts/blogger.js'); // this is the initial script needed to display the twitter stream
+   wp_enqueue_script('twitterstream_init'); */
+   wp_register_script('twitterstream_init', 'http://twitter.com/javascripts/blogger.js','','',true);
+   wp_enqueue_script('twitterstream_init');
+}
+$twitterstream_go = "<script type=\"text/javascript\" src=\"http://twitter.com/statuses/user_timeline/<?php echo $grid_twitter; ?>.json?callback=twitterCallback2&amp;count=<?php echo $grid_tweets; ?>\"></script>";
 ?>

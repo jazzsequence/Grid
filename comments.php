@@ -86,7 +86,7 @@
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /><div class="clear"></div>
 <?php comment_id_fields(); ?>
 </p>
-<?php do_action('comment_form', $post->ID); ?>
+<?php comment_form(); ?>
 
 </form>
 
